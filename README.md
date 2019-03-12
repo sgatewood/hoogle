@@ -8,7 +8,7 @@ Planning Document: https://docs.google.com/document/d/1PhMyb3r3fPW8dSSo2jq-T4N-b
 
 # Deploy and start
 Clone the master branch to your local file system
-<code>https://github.com/sgatewood/hoogle.git</code>
+<code>git clone https://github.com/sgatewood/hoogle.git</code>
 
 Run <code>sudo npm install</code> to install all node packages and dependencies
 
