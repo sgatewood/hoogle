@@ -1,0 +1,46 @@
+table events {
+  id int
+  name varchar
+  time datetime
+  locaton varchar
+  type varchar
+  tag varchar
+  summary varchar
+  discription varchar
+  organization_id int 
+  user_id int
+}
+
+table users {
+  id int
+  name varchar 
+  phone varchar
+  email varchar 
+  birth datetime
+  affliation varchar
+  favorite_tag_1 varchar
+  favorite_tag_2 varchar
+  favorite_tag_3 varchar 
+}
+
+table organizations {
+  id int 
+  name varchar 
+  type varchar
+  location varchar 
+  owner_id int 
+}
+
+ref {
+  organizations.owner_id > users.id
+}
+
+ref {
+  events.organization_id > organizations.id
+}
+
+ref {
+  events.user_id > users.id
+}
+
+
